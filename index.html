@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Nail & Spa | Glen Head</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B8B',
+                        secondary: '#FFE6EA',
+                        dark: '#333333',
+                        light: '#FFFFFF',
+                        accent: '#FFC1CC'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(255, 107, 139, 0.1)',
+                        'hover': '0 20px 40px -5px rgba(255, 107, 139, 0.2)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+            .glass-effect {
+                background: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .gradient-text {
+                background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        
+        /* Custom Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #FF6B8B;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF8E9E;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-light">
+    <!-- Fixed Phone Button -->
+    <a href="tel:(516) 674-3366" class="fixed-phone-btn" title="Call Young Nail & Spa">
+        <i class="fa fa-phone"></i>
+    </a>
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/18701c6e73e44c69956d4ae2420adfe2~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102236&x-signature=mOwDf8InlC8JBSDOFw6cg5wqR2o%3D" 
+                 alt="Young Nail & Spa Interior" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/30 to-dark/50"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-[clamp(2.5rem,8vw,5rem)] font-serif font-bold text-white mb-4 text-shadow">
+                Young <span class="text-accent">Nail & Spa</span>
+            </h1>
+            <p class="text-[clamp(1rem,3vw,1.5rem)] text-white/90 mb-8 max-w-2xl mx-auto">
+                Experience luxury nail care in a modern, trendy atmosphere
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="btn-primary">
+                    Book Now
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+            <a href="#about" class="text-white text-4xl">
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-secondary/30">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="section-title">
+                        About <span class="gradient-text">Us</span>
+                    </h2>
+                    <p class="text-lg mb-6">
+                        Welcome to Young Nail & Spa, your premier destination for luxury nail care and beauty treatments in Glen Head. Our salon offers a modern, chic environment where you can relax and rejuvenate while receiving top-quality services.
+                    </p>
+                    <p class="text-lg mb-8">
+                        Our team of skilled technicians is dedicated to providing you with the latest trends in nail art, manicures, pedicures, and spa treatments. We use only high-quality products to ensure your nails look and feel their best.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="feature-item">
+                            <i class="fa fa-check-circle text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold">Quality Products</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa fa-check-circle text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold">Expert Technicians</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa fa-check-circle text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold">Relaxing Environment</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa fa-check-circle text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold">Latest Trends</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative">
+                    <div class="relative z-10 rounded-lg overflow-hidden shadow-soft transform rotate-2 hover:rotate-0 transition-all-300">
+                        <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/ad3ff507846248ccbcffed06cbdbd27c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102253&x-signature=DG9GhSpZ%2FYTWNiBnNRd%2FYOkAjGc%3D" 
+                             alt="Beautiful Nail Art" 
+                             class="w-full h-auto">
+                    </div>
+                    <div class="absolute top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/10 rounded-full -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">
+                Our <span class="gradient-text">Services</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Manicure</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our signature manicure includes nail shaping, cuticle care, exfoliation, massage, and polish application.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pedicure</h3>
+                    <p class="text-gray-600 mb-4">
+                        Relax with our luxurious pedicure that includes foot soak, exfoliation, callus removal, massage, and polish.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-magic"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Nail Art</h3>
+                    <p class="text-gray-600 mb-4">
+                        Express your style with our creative nail art designs, from simple patterns to intricate 3D designs.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-hand-peace-o"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Gel Nails</h3>
+                    <p class="text-gray-600 mb-4">
+                        Long-lasting gel nails that provide a high-shine finish and chip-resistant color for up to two weeks.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-scissors"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Acrylic Nails</h3>
+                    <p class="text-gray-600 mb-4">
+                        Custom acrylic nail extensions that add length and strength to your natural nails.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Spa Packages</h3>
+                    <p class="text-gray-600 mb-4">
+                        Indulge in our comprehensive spa packages that combine multiple services for the ultimate relaxation.
+                    </p>
+                    <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="text-primary font-medium hover:underline">
+                        Book Now <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-soft overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="bg-primary p-8 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Book Your Appointment</h2>
+                        <p class="mb-8">
+                            Ready to treat yourself to a luxurious nail experience? Book your appointment today and let our expert technicians pamper you.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fa fa-clock-o text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Business Hours</h4>
+                                    <p class="text-white/80">
+                                        Monday - Friday: 9:30 AM - 7:30 PM<br>
+                                        Saturday: 9:30 AM - 7:00 PM<br>
+                                        Sunday: 10:00 AM - 6:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa fa-phone text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Call Us</h4>
+                                    <p class="text-white/80">(516) 674-3366</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://www.fresha.com/book-now/young-nail-spa-ffbjxm6d/services?lid=2926453&eid=5171095&share=true&pId=2829254" target="_blank" class="btn-secondary w-full inline-block text-center">
+                                <i class="fa fa-calendar-check-o mr-2"></i> Book Online
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <form id="appointmentForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your phone number" required>
+                            </div>
+                            <div>
+                                <label for="service" class="form-label">Service</label>
+                                <select id="service" name="service" class="form-input" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="manicure">Manicure</option>
+                                    <option value="pedicure">Pedicure</option>
+                                    <option value="nail-art">Nail Art</option>
+                                    <option value="gel-nails">Gel Nails</option>
+                                    <option value="acrylic-nails">Acrylic Nails</option>
+                                    <option value="spa-package">Spa Package</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="date" class="form-label">Preferred Date</label>
+                                <input type="date" id="date" name="date" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="time" class="form-label">Preferred Time</label>
+                                <input type="time" id="time" name="time" class="form-input" required>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">
+                                Submit Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">
+                Our <span class="gradient-text">Gallery</span>
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/ad3ff507846248ccbcffed06cbdbd27c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102253&x-signature=DG9GhSpZ%2FYTWNiBnNRd%2FYOkAjGc%3D" 
+                         alt="Nail Art Design" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/18701c6e73e44c69956d4ae2420adfe2~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102236&x-signature=mOwDf8InlC8JBSDOFw6cg5wqR2o%3D" 
+                         alt="Salon Interior" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/ad3ff507846248ccbcffed06cbdbd27c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102253&x-signature=DG9GhSpZ%2FYTWNiBnNRd%2FYOkAjGc%3D" 
+                         alt="Nail Design" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/18701c6e73e44c69956d4ae2420adfe2~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102236&x-signature=mOwDf8InlC8JBSDOFw6cg5wqR2o%3D" 
+                         alt="Spa Environment" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/ad3ff507846248ccbcffed06cbdbd27c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102253&x-signature=DG9GhSpZ%2FYTWNiBnNRd%2FYOkAjGc%3D" 
+                         alt="Nail Polish" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/18701c6e73e44c69956d4ae2420adfe2~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102236&x-signature=mOwDf8InlC8JBSDOFw6cg5wqR2o%3D" 
+                         alt="Beauty Salon" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item">
+                    <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/ad3ff507846248ccbcffed06cbdbd27c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102253&x-signature=DG9GhSpZ%2FYTWNiBnNRd%2FYOkAjGc%3D" 
+                         alt="Nail Art" 
+                         class="w-full h-48 object-cover">
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item">
+                    <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/18701c6e73e44c69956d4ae2420adfe2~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202603261530230A44BC03AC7771F097C4&rrcfp=f06b921b&x-expires=1777102236&x-signature=mOwDf8InlC8JBSDOFw6cg5wqR2o%3D" 
+                         alt="Salon Design" 
+                         class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-secondary/30">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-title">
+                        Contact <span class="gradient-text">Us</span>
+                    </h2>
+                    <p class="text-lg mb-8">
+                        Have questions or want to book an appointment? We're here to help! Reach out to us through any of the methods below.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Address</h4>
+                                <p>240 Glen Head Rd #4, Glen Head, NY 11545</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Phone</h4>
+                                <p>(516) 674-3366</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Business Hours</h4>
+                                <ul class="space-y-1">
+                                    <li>Monday - Friday: 9:30 AM - 7:30 PM</li>
+                                    <li>Saturday: 9:30 AM - 7:00 PM</li>
+                                    <li>Sunday: 10:00 AM - 6:00 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/young_nail_spa/" target="_blank" class="social-icon">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-soft text-center">
+                    <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                    <p class="mb-8">
+                        Have questions or want to book an appointment? 
+                        Call us directly or visit our salon!
+                    </p>
+                    <div class="flex justify-center mb-8">
+                        <a href="tel:(516) 674-3366" class="btn-primary">
+                            <i class="fa fa-phone mr-2"></i> Call Now
+                        </a>
+                    </div>
+                    <div class="text-gray-600">
+                        <p>We look forward to serving you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Young <span class="text-primary">Nail & Spa</span></h3>
+                    <p class="text-gray-400 mb-6">
+                        Experience luxury nail care in a modern, trendy atmosphere.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/young_nail_spa/" target="_blank" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-all-300">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Services</a></li>
+                        <li><a href="#appointment" class="text-gray-400 hover:text-primary transition-all-300">Book Appointment</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-all-300">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-all-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Manicure</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Pedicure</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Nail Art</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Gel Nails</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-all-300">Acrylic Nails</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mr-3 mt-1"></i>
+                            <span class="text-gray-400">240 Glen Head Rd #4, Glen Head, NY 11545</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-primary mr-3"></i>
+                            <span class="text-gray-400">(516) 674-3366</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-clock-o text-primary mr-3"></i>
+                            <span class="text-gray-400">Mon-Fri: 9:30 AM - 7:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Young Nail & Spa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-xl font-semibold">Success!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">Your request has been submitted successfully. We will contact you shortly.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const backToTopBtn = document.getElementById('backToTop');
+        const appointmentForm = document.getElementById('appointmentForm');
+        // Contact form removed
+        const successModal = document.getElementById('successModal');
+        const modalCloseButtons = document.querySelectorAll('.modal-close');
+        const modalMessage = document.getElementById('modalMessage');
+        
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submissions
+        if (appointmentForm) {
+            appointmentForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                modalMessage.textContent = 'Your appointment request has been submitted successfully. We will contact you shortly to confirm.';
+                successModal.classList.add('show');
+                appointmentForm.reset();
+            });
+        }
+        
+        // Contact form submission handler removed
+        
+        // Modal Close
+        modalCloseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                successModal.classList.remove('show');
+            });
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                successModal.classList.remove('show');
+            }
+        });
+        
+        // Set minimum date for appointment to today
+        const dateInput = document.getElementById('date');
+        if (dateInput) {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const formattedToday = `${yyyy}-${mm}-${dd}`;
+            dateInput.setAttribute('min', formattedToday);
+        }
+        
+        // Add animation classes when elements come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.service-card, .contact-item, .feature-item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-in');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+
+    <style>
+        /* Additional Styles */
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+            border-radius: 2px;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.3);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 139, 0.4);
+        }
+        
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 30px;
+            background: transparent;
+            color: #FF6B8B;
+            border: 2px solid #FF6B8B;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn-secondary:hover {
+            background: #FF6B8B;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 139, 0.3);
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px -5px rgba(255, 107, 139, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -5px rgba(255, 107, 139, 0.2);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: #FFE6EA;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+            color: #FF6B8B;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            background: #FF6B8B;
+            color: white;
+            transform: rotateY(360deg);
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            flex: 1 1 calc(50% - 20px);
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: #FFE6EA;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 24px;
+            color: #FF6B8B;
+            flex-shrink: 0;
+        }
+        
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            background: #FFE6EA;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #FF6B8B;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: #FF6B8B;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.3);
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        
+        .gallery-item img {
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #FF6B8B;
+            box-shadow: 0 0 0 3px rgba(255, 107, 139, 0.1);
+            background-color: white;
+        }
+        
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #FF6B8B;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.3);
+        }
+        
+        .back-to-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 139, 0.4);
+        }
+        
+        .fixed-phone-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        .fixed-phone-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(255, 107, 139, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 139, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 107, 139, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 139, 0);
+            }
+        }
+        
+        /* Adjust back to top button position when phone button is present */
+        .back-to-top-btn {
+            bottom: 100px;
+        }
+        
+        @media (max-width: 768px) {
+            .fixed-phone-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .back-to-top-btn {
+                bottom: 80px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .modal-header {
+            padding: 20px 30px;
+            background: linear-gradient(90deg, #FF6B8B, #FF8E9E);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-body {
+            padding: 30px;
+        }
+        
+        .modal-footer {
+            padding: 0 30px 30px;
+            text-align: right;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-close:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-icon {
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+</body>
+</html>
