@@ -305,41 +305,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <form id="appointmentForm" class="space-y-6">
-                            <div>
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
-                            </div>
-                            <div>
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your phone number" required>
-                            </div>
-                            <div>
-                                <label for="service" class="form-label">Service</label>
-                                <select id="service" name="service" class="form-input" required>
-                                    <option value="" disabled selected>Select a service</option>
-                                    <option value="manicure">Manicure</option>
-                                    <option value="pedicure">Pedicure</option>
-                                    <option value="nail-art">Nail Art</option>
-                                    <option value="gel-nails">Gel Nails</option>
-                                    <option value="acrylic-nails">Acrylic Nails</option>
-                                    <option value="spa-package">Spa Package</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="date" class="form-label">Preferred Date</label>
-                                <input type="date" id="date" name="date" class="form-input" required>
-                            </div>
-                            <div>
-                                <label for="time" class="form-label">Preferred Time</label>
-                                <input type="time" id="time" name="time" class="form-input" required>
-                            </div>
-                            <button type="submit" class="btn-primary w-full">
-                                Submit Request
-                            </button>
-                        </form>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -596,8 +562,6 @@
     <script>
         // DOM Elements
         const backToTopBtn = document.getElementById('backToTop');
-        const appointmentForm = document.getElementById('appointmentForm');
-        // Contact form removed
         const successModal = document.getElementById('successModal');
         const modalCloseButtons = document.querySelectorAll('.modal-close');
         const modalMessage = document.getElementById('modalMessage');
@@ -618,18 +582,6 @@
             });
         });
         
-        // Form Submissions
-        if (appointmentForm) {
-            appointmentForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                modalMessage.textContent = 'Your appointment request has been submitted successfully. We will contact you shortly to confirm.';
-                successModal.classList.add('show');
-                appointmentForm.reset();
-            });
-        }
-        
-        // Contact form submission handler removed
-        
         // Modal Close
         modalCloseButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -643,17 +595,6 @@
                 successModal.classList.remove('show');
             }
         });
-        
-        // Set minimum date for appointment to today
-        const dateInput = document.getElementById('date');
-        if (dateInput) {
-            const today = new Date();
-            const yyyy = today.getFullYear();
-            const mm = String(today.getMonth() + 1).padStart(2, '0');
-            const dd = String(today.getDate()).padStart(2, '0');
-            const formattedToday = `${yyyy}-${mm}-${dd}`;
-            dateInput.setAttribute('min', formattedToday);
-        }
         
         // Add animation classes when elements come into view
         const animateOnScroll = () => {
